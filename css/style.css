@@ -345,3 +345,81 @@ template {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.header {
+  position: fixed;
+  background-color: #2b4074;
+  width: 100%;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 150px 15px 61px;
+}
+
+.header__logo {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.header__menu span {
+  width: 23px;
+  height: 2px;
+  background: #2b4074;
+  position: absolute;
+}
+
+.header__menu span::before, .header__menu span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  background: #2b4074;
+}
+
+.header__menu span::before {
+  bottom: -6px;
+}
+
+.header__menu span::after {
+  top: -5px;
+}
