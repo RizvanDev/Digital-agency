@@ -20,6 +20,6 @@ btn.onclick = function () {
 
 window.onclick = function (event) {
    if (event.target == modal) {
-      modal.style.margin = "-1500px 0 0 0", modal.style.transition = ".5s";
+      modal.style.margin = "-1500px  0 0 0", modal.style.transition = ".5s";
    }
 }
