@@ -366,8 +366,10 @@ body {
 }
 
 .header__logo {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 
 .header__logo img {
@@ -379,47 +381,168 @@ body {
 }
 
 .header__logo:hover {
-  opacity: 0.8;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
-.header__menu {
-  cursor: pointer;
+.header-menu {
+  display: block;
+  position: absolute;
+  right: 150px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   width: 40px;
   height: 40px;
-  background: #ffffff;
   border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
 }
 
-.header__menu span {
-  width: 23px;
-  height: 2px;
-  background: #2b4074;
+.header-menu:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.header-menu:focus {
+  outline: none;
+}
+
+.header-menu span {
+  display: block;
   position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  right: 18px;
+  height: 4px;
+  width: 21px;
+  background-color: #2b4074;
 }
 
-.header__menu span::before, .header__menu span::after {
+.header-menu span::before, .header-menu span::after {
   content: "";
   display: block;
   position: absolute;
-  width: 23px;
-  height: 2px;
-  background: #2b4074;
+  left: 0px;
+  height: 4px;
+  width: 100%;
+  background-color: #2b4074;
 }
 
-.header__menu span::before {
-  bottom: -6px;
+.header-menu span::before {
+  top: -7.5px;
 }
 
-.header__menu span::after {
-  top: -5px;
+.header-menu span::after {
+  bottom: -7.5px;
+}
+
+.menu-animated {
+  background-color: #fff;
+}
+
+.menu-animated span {
+  -webkit-transition: background 0s 0.2s;
+  transition: background 0s 0.2s;
+}
+
+.menu-animated span::before,
+.menu-animated span::after {
+  -webkit-transition-duration: 0.2s, 0.2s;
+          transition-duration: 0.2s, 0.2s;
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s;
+}
+
+.menu-animated span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: transform, top;
+  transition-property: transform, top, -webkit-transform;
+}
+
+.menu-animated span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: transform, bottom;
+  transition-property: transform, bottom, -webkit-transform;
+}
+
+.menu-animated.active {
+  background: wheat;
+}
+
+.menu-animated.active span {
+  background: none;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.menu-animated.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-animated.active span::after {
+  bottom: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu-animated.active span::before,
+.menu-animated.active span::after {
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s;
+  height: 3px;
+}
+
+.menu__list {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 230px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu__list a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  font-size: 18px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  padding: 5px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.menu__list a:hover {
+  border-color: lightblue;
+  color: wheat;
+}
+
+.menu__list a + a {
+  margin-left: 20px;
+}
+
+.menu__list.nav-active {
+  height: 35px;
+  visibility: visible;
 }

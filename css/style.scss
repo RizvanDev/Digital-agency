@@ -19,13 +19,136 @@ body {
    padding: 15px 150px 15px 61px;
 }
 .header__logo {
-   transition: 0.2s;
+   transition: 0.1s;
+   filter: brightness(85%);
    img {
       object-fit: cover;
       object-position: center;
       width: 100%;
    }
    &:hover {
-      opacity: 0.8;
+      filter: brightness(100%);
+   }
+}
+
+.header-menu {
+   display: block;
+   position: absolute;
+   right: 150px;
+   top: 50%;
+   transform: translateY(-50%);
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+   width: 40px;
+   height: 40px;
+   border-radius: 3px;
+   box-shadow: none;
+   border: none;
+   cursor: pointer;
+   filter: brightness(95%);
+   &:hover {
+      filter: brightness(100%);
+   }
+   &:focus {
+      outline: none;
+   }
+   span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      transform: translateX(-50%);
+      right: 18px;
+      height: 4px;
+      width: 21px;
+      background-color: #2b4074;
+      &::before,
+      &::after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 0px;
+         height: 4px;
+         width: 100%;
+         background-color: #2b4074;
+      }
+      &::before {
+         top: -7.5px;
+      }
+      &::after {
+         bottom: -7.5px;
+      }
+   }
+}
+.menu-animated {
+   background-color: #fff;
+   span {
+      transition: background 0s 0.2s;
+   }
+}
+
+.menu-animated span::before,
+.menu-animated span::after {
+   transition-duration: 0.2s, 0.2s;
+   transition-delay: 0s, 0.3s;
+}
+.menu-animated span::before {
+   transition-property: transform, top;
+}
+.menu-animated span::after {
+   transition-property: transform, bottom;
+}
+.menu-animated.active {
+   background: wheat;
+}
+.menu-animated.active span {
+   background: none;
+   transition: 0s;
+}
+.menu-animated.active span::before {
+   top: 0;
+   transform: rotate(45deg);
+}
+.menu-animated.active span::after {
+   bottom: 1px;
+   transform: rotate(-45deg);
+}
+.menu-animated.active span::before,
+.menu-animated.active span::after {
+   transition-delay: 0.3s, 0s;
+   height: 3px;
+}
+
+.menu__list {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 230px;
+   height: 0px;
+   overflow: hidden;
+   transition: all 0.5s;
+   a {
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.7px;
+      font-size: 18px;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+      padding: 5px;
+      margin-top: 2px;
+      display: inline-block;
+      &:hover {
+         border-color: lightblue;
+         color: wheat;
+      }
+      & + a {
+         margin-left: 20px;
+      }
+   }
+   &.nav-active {
+      height: 35px;
+      visibility: visible;
    }
 }
