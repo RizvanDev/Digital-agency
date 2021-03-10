@@ -392,7 +392,6 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 40px;
@@ -545,4 +544,123 @@ body {
 .menu__list.nav-active {
   height: 35px;
   visibility: visible;
+}
+
+.popup {
+  margin-top: -1500px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0001;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup__content {
+  margin-top: 30px;
+  width: 300px;
+  height: 40px;
+  background: wheat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px 1px aqua;
+          box-shadow: 0 0 5px 1px aqua;
+  border-radius: 5px;
+}
+
+.popup__content a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.popup__content a:hover {
+  color: #2b407e;
+}
+
+@media (max-width: 1350px) {
+  .header__row {
+    padding: 15px 42px 15px 46px;
+  }
+  .header-menu {
+    right: 44px;
+  }
+  .menu__list {
+    right: 105px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__row {
+    padding: 15px 44px 15px 61px;
+  }
+  .header-menu {
+    right: 41px;
+  }
+  .menu__list {
+    right: 90px;
+  }
+  .menu__list a {
+    font-size: 16px;
+  }
+  .menu__list a + a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__row {
+    padding: 15px 53px 15px 61px;
+  }
+  .header-menu {
+    right: 30px;
+  }
+  .menu__list {
+    right: 77px;
+  }
+}
+
+@media (max-width: 570px) {
+  .header__row {
+    padding: 5px 10px 5px 10px;
+  }
+  .header-menu {
+    right: 15px;
+  }
+  .menu__list {
+    top: 95px;
+    right: 10px;
+  }
+  .menu__list a {
+    color: #000;
+    font-size: 15px;
+  }
+  .menu__list a:hover {
+    color: #2b407e;
+    border-color: blue;
+  }
+  .popup {
+    background: #0004;
+  }
+  .popup__content {
+    height: 70px;
+    width: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
