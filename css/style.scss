@@ -29,35 +29,3 @@ body {
       opacity: 0.8;
    }
 }
-.header__menu {
-   cursor: pointer;
-   width: 40px;
-   height: 40px;
-   background: #ffffff;
-   border-radius: 3px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   span {
-      width: 23px;
-      height: 2px;
-      background: #2b4074;
-      position: absolute;
-      &::before,
-      &::after {
-         content: "";
-         display: block;
-         position: absolute;
-         width: 23px;
-         height: 2px;
-         background: #2b4074;
-      }
-      &::before {
-         bottom: -6px;
-      }
-      &::after {
-         top: -5px;
-      }
-   }
-}
