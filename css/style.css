@@ -348,8 +348,10 @@ body {
 
 .header {
   position: fixed;
+  top: 0;
   background-color: #2b4074;
   width: 100%;
+  z-index: 999;
 }
 
 .header__row {
@@ -548,11 +550,12 @@ body {
 
 .popup {
   margin-top: -1500px;
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #0001;
-  z-index: 9999;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,6 +592,103 @@ body {
 
 .popup__content a:hover {
   color: #2b407e;
+}
+
+.about__slider.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.about__slider.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 0;
+}
+
+.about__slider .swiper-slide {
+  background: url("/images/about-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.about__slider .slide__title {
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: 2px;
+  width: 513px;
+  margin: 107px auto 18px;
+}
+
+.about__slider .slide__text {
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  width: 886px;
+  margin: 0 auto;
+}
+
+.about__slider .slide__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin: 28px auto 213px;
+  background: #2b4074;
+  border-radius: 3px;
+  text-decoration: none;
+  position: relative;
+}
+
+.about__slider .slide__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: cornsilk;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.about__slider .slide__link:hover::before {
+  height: 100%;
+}
+
+.about__slider .slide__link:hover span {
+  color: #000;
+}
+
+.about__slider .slide__link span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f9f6e5;
+  z-index: 2;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (max-width: 1350px) {

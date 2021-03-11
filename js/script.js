@@ -13,13 +13,13 @@ document.querySelector('.header-menu').addEventListener('click', function (e) {
 let modal = document.getElementById("header__popup");
 let btn = document.getElementById("my-modal");
 
-
 btn.onclick = function () {
    modal.style.margin = "0px", modal.style.transition = "all .7s";
-}
-
+};
 window.onclick = function (event) {
    if (event.target == modal) {
       modal.style.margin = "-1500px  0 0 0", modal.style.transition = ".5s";
    }
-}
+};
+
+new Swiper('.about__slider');
