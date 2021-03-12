@@ -22,4 +22,21 @@ window.onclick = function (event) {
    }
 };
 
-new Swiper('.about__slider');
+new Swiper('.about__slider.swiper-container', {
+   navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   simulateTouch: false,
+   initialSlide: 1,
+   loop: false,
+   autoplay: {
+      delay: 3000,
+      disableOnIntegration: true,
+   },
+   speed: 1000,
+});

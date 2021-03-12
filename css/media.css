@@ -71,3 +71,13 @@
             flex-direction: column;
   }
 }
+
+@media (max-width: 1350px) {
+  .about__slider .slide__title {
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    width: 400px;
+    margin: 101px auto 29px;
+  }
+}

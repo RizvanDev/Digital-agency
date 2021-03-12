@@ -370,8 +370,8 @@ body {
 .header__logo {
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
 }
 
 .header__logo img {
@@ -601,19 +601,6 @@ body {
   top: 100px;
 }
 
-.about__slider.swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 0;
-}
-
 .about__slider .swiper-slide {
   background: url("/images/about-bg.jpg") no-repeat;
   background-size: cover;
@@ -691,6 +678,67 @@ body {
   transition: all 0.4s;
 }
 
+.about__slider .swiper-button-prev::after,
+.about__slider .swiper-button-next::after {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #2b4074;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.about__slider .swiper-button-prev.swiper-button-disabled,
+.about__slider .swiper-button-next.swiper-button-disabled {
+  opacity: 1;
+}
+
+.about__slider .swiper-button-prev.swiper-button-disabled::after,
+.about__slider .swiper-button-next.swiper-button-disabled::after {
+  background-color: #f9f6e5;
+  color: #929292;
+}
+
+.about__slider .swiper-button-next,
+.about__slider .swiper-button-prev {
+  right: 22px;
+}
+
+.about__slider .swiper-button-prev {
+  left: 10px;
+  left: auto;
+  top: 260px;
+}
+
+.about__slider .swiper-pagination {
+  margin-bottom: 78px;
+}
+
+.about__slider .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+}
+
+.about__slider .swiper-pagination-bullet-active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
 @media (max-width: 1350px) {
   .header__row {
     padding: 15px 42px 15px 46px;
@@ -762,5 +810,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 1350px) {
+  .about__slider.slide__title {
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    width: 513px;
+    margin: 101px auto 29px;
   }
 }
