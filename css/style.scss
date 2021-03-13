@@ -194,6 +194,7 @@ body {
    height: 100%;
    position: relative;
    top: 100px;
+   margin-bottom: 100px;
 }
 .about__slider.swiper-wrapper {
 }
@@ -303,6 +304,75 @@ body {
    .swiper-pagination-bullet-active {
       background-color: transparent;
       border-color: #fff;
+   }
+}
+
+//feedback
+
+.feedback {
+   background: #2b407e;
+   color: #fff;
+   overflow: hidden;
+}
+.feedback__row {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.feedback__text {
+   margin: 57px 0;
+   h1 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+   }
+   p {
+      width: 550px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18px;
+   }
+}
+.feedback__btn {
+   width: 200px;
+   height: 50px;
+   top: 71px;
+   background: #f9f6e5;
+   border: none;
+   cursor: pointer;
+   border-radius: 3px;
+   position: relative;
+   top: 50%;
+   z-index: 2;
+   &:focus {
+      outline: none;
+   }
+   span {
+      display: block;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      color: #2b407e;
+      transition: 0.5s;
+   }
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: rgb(136, 208, 136);
+      transition: all 0.4s;
+      border-radius: 3px;
+      z-index: -1;
+   }
+   &:hover::before {
+      width: 100%;
+   }
+   &:hover span {
+      color: #fff9;
+      letter-spacing: 0.4px;
    }
 }
 
