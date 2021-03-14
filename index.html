@@ -33,6 +33,7 @@
          <div class="popup__content">
             <a href="tel:+80 555 55 66">+80 555 55 66</a>
             <a href="mailto:digi@gmail.com">digi@gmail.com</a>
+            <div class="header__popup-close">X</div>
          </div>
       </div>
    </header>
@@ -63,16 +64,31 @@
          <div class="swiper-button-prev"></div>
          <div class="swiper-pagination"></div>
       </div>
+
       <div class="feedback">
          <div class="feedback__row">
             <div class="feedback__text">
                <h2>Вы полюбите нас с первой встречи!</h2>
                <p>
-                  Мы предоставляем комплексный подход к продвижению компании,
+                  Мы предоставляем комплексный подход к продвижению компании,<br />
                   продуктов и услуг в цифровой сфере.
                </p>
             </div>
-            <button type="button" class="feedback__btn"><span>ПЕРЕЗВОНИТЕ МНЕ</span></button>
+            <button type="button" href="#feedback" id="feedback-btn" class="feedback__btn"><span>ПЕРЕЗВОНИТЕ
+                  МНЕ</span></button>
+         </div>
+         <div id="feedback" class="feedback__modal">
+            <div class="feedback__modal_content">
+
+               <form action="#">
+                  <input type="text" placeholder=" Как к вам обратиться?" required>
+                  <input type="tel" placeholder="Ваш номер телефона" required>
+                  <textarea placeholder="сообщение (необезательно)"></textarea>
+                  <button type="button" class="feedback__button">отправить</button>
+                  <span class="feedback__exit">X</span>
+               </form>
+            </div>
+            <div class="feedback__img"></div>
          </div>
       </div>
    </main>
