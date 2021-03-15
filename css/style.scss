@@ -211,7 +211,8 @@ body {
 .about__slider.swiper-wrapper {
 }
 .about__slider .swiper-slide {
-   background: url("../images/about-bg.jpg") no-repeat;
+   background-image: url("../images/about-bg\ .jpg");
+   background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
    width: 100%;

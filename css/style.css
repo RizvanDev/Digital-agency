@@ -619,7 +619,8 @@ body {
 }
 
 .about__slider .swiper-slide {
-  background: url("/images/about-bg.jpg") no-repeat;
+  background-image: url("../images/about-bg .jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -976,7 +977,7 @@ body {
   position: absolute;
   left: 18%;
   bottom: 8%;
-  background-image: url("/images/wooman.png");
+  background-image: url("../images/wooman.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 25%;
