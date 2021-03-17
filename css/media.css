@@ -216,7 +216,7 @@
   }
   .feedback__modal_content input {
     display: block;
-    padding: 7px 30px;
+    padding: 9px 25px;
   }
   .feedback__modal_content input + input {
     margin-top: 8px;
@@ -224,7 +224,7 @@
   .feedback__modal_content textarea {
     margin: 8px 0;
     padding: 8px;
-    width: 226px;
+    width: 216px;
     font-size: 14px;
   }
   .feedback__modal_content .feedback__button {
