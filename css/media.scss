@@ -215,13 +215,8 @@
       input {
          display: block;
          padding: 9px 18px;
-         margin: 0 auto;
-         & + input {
-            margin-top: 8px;
-         }
       }
       textarea {
-         margin: 8px auto;
          padding: 8px;
          width: 216px;
          font-size: 14px;

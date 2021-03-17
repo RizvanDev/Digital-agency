@@ -217,13 +217,8 @@
   .feedback__modal_content input {
     display: block;
     padding: 9px 18px;
-    margin: 0 auto;
-  }
-  .feedback__modal_content input + input {
-    margin-top: 8px;
   }
   .feedback__modal_content textarea {
-    margin: 8px auto;
     padding: 8px;
     width: 216px;
     font-size: 14px;

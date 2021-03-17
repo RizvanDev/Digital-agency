@@ -885,6 +885,7 @@ body {
   display: block;
   padding: 9px 35px;
   border: 1px dotted #0009;
+  margin: 8px auto;
 }
 
 .feedback__modal_content input::-webkit-input-placeholder {
@@ -895,12 +896,8 @@ body {
   outline: none;
 }
 
-.feedback__modal_content input + input {
-  margin-top: 10px;
-}
-
 .feedback__modal_content textarea {
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 10px 10px;
   resize: none;
   width: 233px;
@@ -1206,11 +1203,7 @@ body {
     display: block;
     padding: 9px 18px;
   }
-  .feedback__modal_content input + input {
-    margin-top: 8px;
-  }
   .feedback__modal_content textarea {
-    margin: 8px auto;
     padding: 8px;
     width: 216px;
     font-size: 14px;
