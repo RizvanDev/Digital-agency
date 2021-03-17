@@ -216,7 +216,8 @@
   }
   .feedback__modal_content input {
     display: block;
-    padding: 9px 25px;
+    padding: 9px 18px;
+    margin: 0 auto;
   }
   .feedback__modal_content input + input {
     margin-top: 8px;
