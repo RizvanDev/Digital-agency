@@ -900,7 +900,7 @@ body {
 }
 
 .feedback__modal_content textarea {
-  margin: 10px 0;
+  margin: 10px auto;
   padding: 10px 10px;
   resize: none;
   width: 233px;
@@ -1209,7 +1209,7 @@ body {
     margin-top: 8px;
   }
   .feedback__modal_content textarea {
-    margin: 8px 0;
+    margin: 8px auto;
     padding: 8px;
     width: 216px;
     font-size: 14px;
