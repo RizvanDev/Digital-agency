@@ -866,7 +866,6 @@ body {
   position: relative;
   width: 300px;
   height: 285px;
-  margin: 0 auto;
   background: lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
