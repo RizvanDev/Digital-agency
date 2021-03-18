@@ -180,11 +180,13 @@ body {
    height: 30px;
 }
 .header__popup_phone::before {
-   background: url("../images/icons/phone.svg") no-repeat;
+   background-image: url("../images/icons/phone\.svg");
+   background-repeat: no-repeat;
    background-size: contain;
 }
 .header__popup_mail::before {
-   background: url("../images/icons/mail-send.svg") no-repeat;
+   background-image: url("../images/icons/mail-send\.svg");
+   background-repeat: no-repeat;
    background-size: contain;
 }
 .popup__content {
@@ -203,8 +205,10 @@ body {
       color: #000;
       font-size: 18px;
       font-weight: 500;
+      transition: all 0.2s;
       &:hover {
          color: #2b407e;
+         letter-spacing: 0.3px;
       }
    }
 }

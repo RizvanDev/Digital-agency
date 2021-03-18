@@ -582,12 +582,14 @@ body {
 }
 
 .header__popup_phone::before {
-  background: url("../images/icons/phone.svg") no-repeat;
+  background-image: url("../images/icons/phone.svg");
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
 .header__popup_mail::before {
-  background: url("../images/icons/mail-send.svg") no-repeat;
+  background-image: url("../images/icons/mail-send.svg");
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -615,10 +617,13 @@ body {
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .popup__content a:hover {
   color: #2b407e;
+  letter-spacing: 0.3px;
 }
 
 .header__popup-close {
