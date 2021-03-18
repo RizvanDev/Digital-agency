@@ -165,9 +165,31 @@ body {
    display: flex;
    justify-content: center;
 }
+.header__popup_phone,
+.header__popup_mail {
+   margin-left: 20px;
+   position: relative;
+}
+.header__popup_phone::before,
+.header__popup_mail::before {
+   content: "";
+   position: absolute;
+   top: -5px;
+   left: -35px;
+   width: 90px;
+   height: 30px;
+}
+.header__popup_phone::before {
+   background: url("../images/icons/phone.svg") no-repeat;
+   background-size: contain;
+}
+.header__popup_mail::before {
+   background: url("../images/icons/mail-send.svg") no-repeat;
+   background-size: contain;
+}
 .popup__content {
    margin-top: 10px;
-   width: 300px;
+   width: 370px;
    height: 80px;
    background: wheat;
    display: flex;
@@ -179,9 +201,8 @@ body {
    a {
       text-decoration: none;
       color: #000;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 500;
-      letter-spacing: 0.4px;
       &:hover {
          color: #2b407e;
       }
