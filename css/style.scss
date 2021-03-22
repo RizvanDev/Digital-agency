@@ -244,6 +244,9 @@ body {
    height: 100%;
    color: #fff;
    text-align: center;
+   span {
+      display: block;
+   }
 }
 .about__slider .slide__title {
    font-family: Roboto Condensed;
@@ -518,6 +521,148 @@ body {
    background-size: contain;
    width: 25%;
    height: 70%;
+}
+
+//services
+
+.services {
+   padding: 0 0px 0 62px;
+}
+.services__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.services__text {
+   flex: 0 1 33%;
+}
+.services__text_title {
+   font-family: Roboto Condensed;
+   font-size: 48px;
+   line-height: 56px;
+   color: #2b4074;
+   margin-top: 90px;
+}
+.services__text_subtext {
+   font-size: 24px;
+   line-height: 26px;
+   color: #4a4a4a;
+   max-width: 393px;
+   position: relative;
+   margin: 76px 0 73px;
+   &::after {
+      content: "";
+      position: absolute;
+      width: 98.74px;
+      height: 8px;
+      left: 0px;
+      bottom: -30px;
+      background: #2b4074;
+   }
+}
+.services__text_subtext2 {
+   font-size: 18px;
+   line-height: 24px;
+   color: #797979;
+   width: 351px;
+   margin-bottom: 134px;
+}
+.services__links {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   flex: 0 1 67%;
+}
+.services__links_link {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 222px;
+   height: 255px;
+   padding: 39px;
+   border: 1px solid #f9f6e5;
+   font-size: 16px;
+   line-height: 19px;
+   font-weight: bold;
+   transition: all 0.3s;
+   position: relative;
+   &:hover {
+      border: 4px groove #2b4074;
+      padding: 28px;
+      cursor: help;
+      img {
+         margin-top: -165px;
+         transition: 0.5s;
+      }
+      p {
+         margin-top: -30px;
+         transition: 0.5s;
+      }
+      span {
+         position: static;
+         opacity: 1;
+         transition: all 1.3s;
+      }
+      a {
+         visibility: visible;
+         opacity: 1;
+         transition: all 0.5s;
+      }
+   }
+   img {
+      min-width: 64px;
+      min-height: 64px;
+      object-position: center;
+      position: absolute;
+   }
+   p {
+      font-family: Roboto Condensed;
+      letter-spacing: 2px;
+      color: #4a4a4a;
+      position: absolute;
+      margin-top: 50%;
+      transition: 0.2s;
+      width: 189px;
+   }
+   span {
+      font-weight: 500;
+      line-height: 18px;
+      color: #9b9b9b;
+      margin: 21px 0 18px;
+      display: block;
+      margin-top: 50%;
+      opacity: 0;
+   }
+   a {
+      font-family: Roboto Condensed;
+      letter-spacing: 2px;
+      color: #2b4074;
+      text-decoration: none;
+      position: relative;
+      visibility: hidden;
+      opacity: 0;
+      &:hover {
+         letter-spacing: 0.8px;
+         color: #634b86;
+      }
+      &:active {
+         letter-spacing: 2px;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         right: -20px;
+         width: 14px;
+         height: 10px;
+         background: url("../images/icons/right-arrow.png") no-repeat;
+         background-size: cover;
+      }
+   }
 }
 
 @import "../css/media.scss";
