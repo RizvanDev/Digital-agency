@@ -1566,4 +1566,10 @@ body {
     max-width: 60%;
     margin: 0 auto;
   }
+  .services__links_link:hover img {
+    margin-top: -145px;
+  }
+  .services__links_link:hover p {
+    margin-top: -20px;
+  }
 }

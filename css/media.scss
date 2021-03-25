@@ -339,5 +339,13 @@
    .services__links_link {
       max-width: 60%;
       margin: 0 auto;
+      &:hover {
+         img {
+            margin-top: -145px;
+         }
+         p {
+            margin-top: -20px;
+         }
+      }
    }
 }
