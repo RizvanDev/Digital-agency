@@ -5,7 +5,10 @@
 body {
    font-family: "Roboto", sans-serif;
 }
-
+.container {
+   max-width: 1920px;
+   margin: 0 auto;
+}
 //  header
 
 .header {
@@ -525,16 +528,15 @@ body {
 
 //services
 
-.services {
-   padding: 0 0px 0 62px;
-}
 .services__row {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   width: 100%;
 }
 .services__text {
    flex: 0 1 33%;
+   padding-left: 62px;
 }
 .services__text_title {
    font-family: Roboto Condensed;
@@ -569,10 +571,14 @@ body {
 }
 .services__links {
    display: flex;
-   flex-wrap: wrap;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    flex: 0 1 67%;
+}
+.links__row1,
+.links__row2 {
+   display: flex;
 }
 .services__links_link {
    display: flex;
@@ -580,7 +586,7 @@ body {
    align-items: center;
    justify-content: center;
    text-align: center;
-   width: 222px;
+   max-width: 222px;
    height: 255px;
    padding: 39px;
    border: 1px solid #f9f6e5;
@@ -591,15 +597,16 @@ body {
    position: relative;
    &:hover {
       border: 4px groove #2b4074;
-      padding: 28px;
+      margin: auto;
+      padding: 25px;
       cursor: help;
       img {
          margin-top: -165px;
-         transition: 0.5s;
+         transition: all 0.5s;
       }
       p {
-         margin-top: -30px;
-         transition: 0.5s;
+         margin-top: -20px;
+         transition: all 0.5s;
       }
       span {
          position: static;

@@ -2,6 +2,19 @@
    .feedback__img {
       left: 14%;
    }
+   .services__links_link {
+      img {
+         margin-top: -16px;
+      }
+   }
+   .services__links_link:hover {
+      img {
+         margin-top: -190px;
+      }
+      p {
+         margin-top: -45px;
+      }
+   }
 }
 @media (max-width: 1350px) {
    //header
@@ -44,6 +57,7 @@
          background-color: transparent;
       }
    }
+   //feedback
    .feedback__text {
       margin: 40px 0;
       h1 {
@@ -61,6 +75,31 @@
       bottom: 15%;
       width: 20%;
       height: 60%;
+   }
+   //services
+   .services__row {
+      flex-direction: column;
+   }
+   .services__text {
+      width: 100%;
+   }
+   .services__text_title {
+      text-align: center;
+   }
+   .services__text_subtext {
+      white-space: nowrap;
+      max-width: 100%;
+      &::after {
+         width: 110px;
+      }
+   }
+   .services__text_subtext2 {
+      width: 610px;
+      margin-bottom: 28px;
+   }
+   .services__links {
+      width: 100%;
+      max-width: 100%;
    }
 }
 
@@ -104,6 +143,26 @@
          line-height: 18px;
       }
    }
+
+   //services
+
+   .links__row1,
+   .links__row2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+   .services__text_subtext2 {
+      width: 678px;
+      margin-bottom: 28px;
+   }
+   .services__links_link {
+      max-width: 37.5%;
+      &:hover {
+         margin: 0;
+      }
+   }
 }
 @media (max-width: 767px) {
    //header
@@ -138,6 +197,35 @@
    }
    .feedback__btn {
       margin-bottom: 40px;
+   }
+   //services
+   .services__text {
+      padding-left: 0px;
+   }
+   .services__text_subtext {
+      white-space: normal;
+      text-align: center;
+      max-width: 100%;
+      &::after {
+         width: 110px;
+         margin-left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+   .services__text_subtext2 {
+      width: 100%;
+      text-align: center;
+   }
+   .services__links_link {
+      max-width: 100%;
+      &:hover {
+         img {
+            margin-top: -90px;
+         }
+         p {
+            margin-top: 35px;
+         }
+      }
    }
 }
 @media (max-width: 720px) {
@@ -241,5 +329,15 @@
          width: 30px;
          height: 30px;
       }
+   }
+   //services
+   .services__text_subtext {
+      margin: 76px 5px 73px;
+   }
+   .services__text_subtext2 {
+   }
+   .services__links_link {
+      max-width: 60%;
+      margin: 0 auto;
    }
 }
