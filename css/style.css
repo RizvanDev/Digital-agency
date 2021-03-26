@@ -1274,6 +1274,7 @@ body {
 .projects__link {
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
 .projects__link img {
