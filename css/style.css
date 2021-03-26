@@ -628,7 +628,6 @@ body {
 
 .popup__content a:hover {
   color: #2b407e;
-  letter-spacing: 0.3px;
 }
 
 .header__popup-close {
@@ -1466,12 +1465,16 @@ body {
     right: 15px;
   }
   .menu__list {
-    top: 100px;
-    right: 10px;
+    width: 100%;
+    background-color: #0007;
+    top: 97px;
+    right: 0;
   }
   .menu__list a {
-    color: #fff;
-    font-size: 15px;
+    color: coral;
+    font-weight: 800;
+    font-size: 16px;
+    float: right;
   }
   .menu__list a:hover {
     color: azure;
