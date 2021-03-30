@@ -348,8 +348,9 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
@@ -1118,8 +1119,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  max-width: 222px;
   height: 255px;
+  width: 32%;
   padding: 39px;
   border: 1px solid #f9f6e5;
   font-size: 16px;
@@ -1272,9 +1273,41 @@ body {
 }
 
 .projects__link {
-  cursor: pointer;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__link:hover a {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects__link a {
+  position: absolute;
+  -webkit-transform: translateX(-72%);
+          transform: translateX(-72%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 40px;
+}
+
+.projects__link a + a {
+  margin-left: 80px;
 }
 
 .projects__link img {
