@@ -1355,10 +1355,10 @@ body {
     margin-top: -16px;
   }
   .services__links_link:hover img {
-    margin-top: -190px;
+    margin-top: -210px;
   }
   .services__links_link:hover p {
-    margin-top: -45px;
+    margin-top: -80px;
   }
 }
 
@@ -1567,10 +1567,10 @@ body {
     max-width: 100%;
   }
   .services__links_link:hover img {
-    margin-top: -90px;
+    margin-top: -150px;
   }
   .services__links_link:hover p {
-    margin-top: 35px;
+    margin-top: -25px;
   }
 }
 
@@ -1689,7 +1689,7 @@ body {
     margin: 76px 5px 73px;
   }
   .services__links_link {
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
   }
   .services__links_link:hover img {

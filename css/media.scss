@@ -9,10 +9,10 @@
    }
    .services__links_link:hover {
       img {
-         margin-top: -190px;
+         margin-top: -210px;
       }
       p {
-         margin-top: -45px;
+         margin-top: -80px;
       }
    }
 }
@@ -220,10 +220,10 @@
       max-width: 100%;
       &:hover {
          img {
-            margin-top: -90px;
+            margin-top: -150px;
          }
          p {
-            margin-top: 35px;
+            margin-top: -25px;
          }
       }
    }
@@ -341,7 +341,7 @@
    .services__text_subtext2 {
    }
    .services__links_link {
-      max-width: 60%;
+      width: 60%;
       margin: 0 auto;
       &:hover {
          img {
