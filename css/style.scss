@@ -762,4 +762,81 @@ body {
       opacity: 0.8;
    }
 }
+
+//team
+
+.team {
+   padding: 50px 0 109px 0;
+}
+.team__row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 100px;
+}
+.team__image {
+   max-width: 460px;
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+   }
+}
+.team__text_title {
+   font-family: Roboto Condensed;
+   font-size: 48px;
+   line-height: 56px;
+   color: #4a4a4a;
+   position: relative;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      width: 113px;
+      height: 8px;
+      background: #2b4074;
+   }
+}
+.team__text_article {
+   font-size: 18px;
+   line-height: 24px;
+   color: #9b9b9b;
+   margin: 39px 0;
+   width: 484px;
+}
+.team__button {
+   width: 230px;
+   height: 60px;
+   display: flex;
+   font-size: 18px;
+   line-height: 18px;
+   justify-content: center;
+   align-items: center;
+   background: #2b4074;
+   border-radius: 3px;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 0;
+      background: cornsilk;
+      transition: all 0.3s;
+   }
+   &:hover::before {
+      height: 100%;
+   }
+   &:hover span {
+      color: #000;
+      z-index: 2;
+      font-weight: normal;
+      transition: all 2s;
+   }
+}
 @import "../css/media.scss";

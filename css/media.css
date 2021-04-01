@@ -95,6 +95,24 @@
     width: 100%;
     max-width: 100%;
   }
+  .team {
+    padding: 80px 15px;
+  }
+  .team__row {
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+  }
+  .team__image {
+    max-width: 401px;
+  }
+  .team__text_title::after {
+    bottom: -15px;
+    width: 100px;
+  }
+  .team__text_article {
+    margin: 0 0 19px 0;
+    max-width: 523px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -159,6 +177,35 @@
   .services__links_link:hover {
     margin: 0;
   }
+  .team {
+    padding: 40px 46px 108px 43px;
+  }
+  .team__row {
+    -webkit-column-gap: 34px;
+            column-gap: 34px;
+  }
+  .team__image {
+    max-width: 240px;
+  }
+  .team__text_title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .team__text_title::after {
+    bottom: -20px;
+    width: 88px;
+  }
+  .team__text_article {
+    margin: 7px 0 21px 0;
+    max-width: 407px;
+    line-height: 18px;
+  }
+  .team__button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-65%);
+            transform: translateX(-65%);
+  }
 }
 
 @media (max-width: 767px) {
@@ -222,6 +269,41 @@
   }
   .services__links_link:hover p {
     margin-top: -25px;
+  }
+  .team {
+    padding: 40px 0px 104px 0px;
+  }
+  .team__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team__image {
+    max-width: 518px;
+  }
+  .team__text_title {
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .team__text_title::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .team__text_article {
+    margin: 40px 0 56px 0;
+    max-width: 518px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .team__button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 20px;
   }
 }
 
@@ -348,5 +430,21 @@
   }
   .services__links_link:hover p {
     margin-top: -20px;
+  }
+  .team {
+    padding: 20px 0px 100px 0px;
+  }
+  .team__image {
+    max-width: 280px;
+  }
+  .team__text_title {
+    font-size: 24px;
+  }
+  .team__text_title::after {
+    width: 45px;
+  }
+  .team__text_article {
+    margin: 23px 0 84px 0;
+    max-width: 280px;
   }
 }

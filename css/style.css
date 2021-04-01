@@ -1347,6 +1347,107 @@ body {
   opacity: 0.8;
 }
 
+.team {
+  padding: 50px 0 109px 0;
+}
+
+.team__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.team__image {
+  max-width: 460px;
+}
+
+.team__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+
+.team__text_title {
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  line-height: 56px;
+  color: #4a4a4a;
+  position: relative;
+}
+
+.team__text_title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 113px;
+  height: 8px;
+  background: #2b4074;
+}
+
+.team__text_article {
+  font-size: 18px;
+  line-height: 24px;
+  color: #9b9b9b;
+  margin: 39px 0;
+  width: 484px;
+}
+
+.team__button {
+  width: 230px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2b4074;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.team__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: cornsilk;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.team__button:hover::before {
+  height: 100%;
+}
+
+.team__button:hover span {
+  color: #000;
+  z-index: 2;
+  font-weight: normal;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
 @media (max-width: 1580px) {
   .feedback__img {
     left: 14%;
@@ -1444,6 +1545,24 @@ body {
     width: 100%;
     max-width: 100%;
   }
+  .team {
+    padding: 80px 15px;
+  }
+  .team__row {
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+  }
+  .team__image {
+    max-width: 401px;
+  }
+  .team__text_title::after {
+    bottom: -15px;
+    width: 100px;
+  }
+  .team__text_article {
+    margin: 0 0 19px 0;
+    max-width: 523px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1508,6 +1627,35 @@ body {
   .services__links_link:hover {
     margin: 0;
   }
+  .team {
+    padding: 40px 46px 108px 43px;
+  }
+  .team__row {
+    -webkit-column-gap: 34px;
+            column-gap: 34px;
+  }
+  .team__image {
+    max-width: 240px;
+  }
+  .team__text_title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .team__text_title::after {
+    bottom: -20px;
+    width: 88px;
+  }
+  .team__text_article {
+    margin: 7px 0 21px 0;
+    max-width: 407px;
+    line-height: 18px;
+  }
+  .team__button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-65%);
+            transform: translateX(-65%);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1571,6 +1719,41 @@ body {
   }
   .services__links_link:hover p {
     margin-top: -25px;
+  }
+  .team {
+    padding: 40px 0px 104px 0px;
+  }
+  .team__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team__image {
+    max-width: 518px;
+  }
+  .team__text_title {
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .team__text_title::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .team__text_article {
+    margin: 40px 0 56px 0;
+    max-width: 518px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .team__button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 20px;
   }
 }
 
@@ -1697,5 +1880,21 @@ body {
   }
   .services__links_link:hover p {
     margin-top: -20px;
+  }
+  .team {
+    padding: 20px 0px 100px 0px;
+  }
+  .team__image {
+    max-width: 280px;
+  }
+  .team__text_title {
+    font-size: 24px;
+  }
+  .team__text_title::after {
+    width: 45px;
+  }
+  .team__text_article {
+    margin: 23px 0 84px 0;
+    max-width: 280px;
   }
 }

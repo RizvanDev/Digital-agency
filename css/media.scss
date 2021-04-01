@@ -101,8 +101,27 @@
       width: 100%;
       max-width: 100%;
    }
+   //team
+   .team {
+      padding: 80px 15px;
+   }
+   .team__row {
+      column-gap: 60px;
+   }
+   .team__image {
+      max-width: 401px;
+   }
+   .team__text_title {
+      &::after {
+         bottom: -15px;
+         width: 100px;
+      }
+   }
+   .team__text_article {
+      margin: 0 0 19px 0;
+      max-width: 523px;
+   }
 }
-
 @media (max-width: 900px) {
    //header
    .header__row {
@@ -162,6 +181,34 @@
       &:hover {
          margin: 0;
       }
+   }
+   //team
+   .team {
+      padding: 40px 46px 108px 43px;
+   }
+   .team__row {
+      column-gap: 34px;
+   }
+   .team__image {
+      max-width: 240px;
+   }
+   .team__text_title {
+      font-size: 36px;
+      line-height: 38px;
+      &::after {
+         bottom: -20px;
+         width: 88px;
+      }
+   }
+   .team__text_article {
+      margin: 7px 0 21px 0;
+      max-width: 407px;
+      line-height: 18px;
+   }
+   .team__button {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-65%);
    }
 }
 @media (max-width: 767px) {
@@ -226,6 +273,37 @@
             margin-top: -25px;
          }
       }
+   }
+   //team
+   .team {
+      padding: 40px 0px 104px 0px;
+   }
+   .team__row {
+      flex-direction: column;
+   }
+   .team__image {
+      max-width: 518px;
+   }
+   .team__text_title {
+      font-size: 36px;
+      line-height: 38px;
+      text-align: center;
+      &::after {
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+   .team__text_article {
+      margin: 40px 0 56px 0;
+      max-width: 518px;
+      font-size: 16px;
+      text-align: center;
+   }
+   .team__button {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
    }
 }
 @media (max-width: 720px) {
@@ -351,5 +429,22 @@
             margin-top: -20px;
          }
       }
+   }
+   //team
+   .team {
+      padding: 20px 0px 100px 0px;
+   }
+   .team__image {
+      max-width: 280px;
+   }
+   .team__text_title {
+      font-size: 24px;
+      &::after {
+         width: 45px;
+      }
+   }
+   .team__text_article {
+      margin: 23px 0 84px 0;
+      max-width: 280px;
    }
 }
