@@ -74,8 +74,9 @@
                      продуктов и услуг в цифровой сфере.
                   </p>
                </div>
-               <button type="button" href="#feedback" id="feedback-btn" class="feedback__btn"><span>ПЕРЕЗВОНИТЕ
-                     МНЕ</span></button>
+               <button type="button" id="feedback-btn" class="feedback__btn">
+                  <span>ПЕРЕЗВОНИТЕ МНЕ</span>
+               </button>
             </div>
             <div id="feedback" class="feedback__modal">
                <div class="feedback__modal_content">
@@ -209,7 +210,15 @@
                      поэтому мы постоянно ищем способы, как стать лучше
                      в том, что мы делаем.
                   </p>
-                  <button class="team__button"><span>СМОТРЕТЬ ВИДЕО</span></button>
+                  <button class="team__button" id="video-btn"><span>СМОТРЕТЬ ВИДЕО</span></button>
+                  <div class="modal__video" id="video">
+                     <span class="video__exit">X</span>
+                     <video controls="controls">
+                        <source src="./video/video.mp4">
+                        <source src="./video/video.ogv">
+                        <source src="./video/video.webm">
+                     </video>
+                  </div>
                </div>
             </div>
          </div>

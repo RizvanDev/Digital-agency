@@ -1444,8 +1444,46 @@ body {
   color: #000;
   z-index: 2;
   font-weight: normal;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.9s ease-in;
+  transition: all 0.9s ease-in;
+}
+
+.modal__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0009;
+  z-index: 999;
+}
+
+.modal__video video {
+  width: 80%;
+  min-height: 50vh;
+  z-index: 100;
+}
+
+.modal__video span {
+  cursor: pointer;
+  color: red;
+  font-size: 54px;
+  font-weight: 100;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  z-index: 101;
 }
 
 @media (max-width: 1580px) {

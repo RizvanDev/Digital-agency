@@ -57,3 +57,15 @@ window.onclick = function (event) {
       popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = "all .6s";
    }
 };
+
+let video = document.getElementById("video");
+let click = document.getElementById("video-btn");
+let span = document.getElementsByClassName("video__exit")[0];
+
+
+click.onclick = function () {
+   video.style.visibility = "visible", video.style.opacity = "1", video.style.transition = "all .5s ease-in";
+};
+span.onclick = function () {
+   video.style.visibility = "hidden", video.style.opacity = "0", video.style.transition = ".3s";
+};
