@@ -1470,8 +1470,7 @@ body {
 }
 
 .modal__video video {
-  width: 80%;
-  min-height: 50vh;
+  width: 77%;
   z-index: 100;
 }
 
