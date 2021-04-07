@@ -22,7 +22,6 @@ close.onclick = function () {
    modal.style.margin = "-1500px 0 0 0", modal.style.transition = ".3s";
 };
 
-
 new Swiper('.about__slider.swiper-container', {
    navigation: {
       prevEl: '.swiper-button-prev',
@@ -52,7 +51,7 @@ button.onclick = function () {
 exit.onclick = function () {
    popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = ".6s";
 };
-window.onclick = function (event) {
+popup.onclick = function (event) {
    if (event.target == popup) {
       popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = "all .6s";
    }
@@ -68,4 +67,9 @@ click.onclick = function () {
 };
 span.onclick = function () {
    video.style.visibility = "hidden", video.style.opacity = "0", video.style.transition = ".3s";
+};
+video.onclick = function (event) {
+   if (event.target == video) {
+      video.style.opacity = "0", video.style.visibility = "hidden", video.style.transition = "all .6s";
+   }
 };
