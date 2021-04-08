@@ -1495,6 +1495,128 @@ body {
   color: red;
 }
 
+.news {
+  padding: 52px 0 80px 0;
+  background-color: #f9f6e5;
+}
+
+.news__title {
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #4a4a4a;
+  position: relative;
+}
+
+.news__title::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 108px;
+  height: 8px;
+  background-color: #2b4074;
+}
+
+.news__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 30px;
+  max-width: 1205px;
+  margin: auto;
+}
+
+.news__item {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border: 10px solid transparent;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.news__item .info-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.news__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.news__item:hover {
+  border-color: #2b407e;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.news__item:hover .info-button {
+  visibility: visible;
+  opacity: 1;
+}
+
+.news__item:hover .item__title {
+  bottom: 0;
+  background-color: #2b407e;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.news__item .item__title {
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 40px;
+  position: absolute;
+  bottom: -53px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 @media (max-width: 1580px) {
   .feedback__img {
     left: 14%;
