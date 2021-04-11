@@ -113,6 +113,12 @@
     margin: 0 0 19px 0;
     max-width: 523px;
   }
+  .news__row {
+    max-width: 930px;
+    row-gap: 30px;
+    -webkit-column-gap: 31px;
+            column-gap: 31px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -413,8 +419,6 @@
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
-    color: red;
-    font-size: 26px;
     width: 30px;
     height: 30px;
   }

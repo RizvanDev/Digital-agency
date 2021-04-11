@@ -217,14 +217,18 @@ body {
 }
 .header__popup-close {
    position: absolute;
-   right: -20px;
-   top: -10px;
-   color: red;
+   right: -35px;
+   top: -5px;
+   color: #fff;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   padding: 3px 5px;
    font-size: 22px;
    cursor: pointer;
    transition: 0.2s;
    &:hover {
-      font-weight: 800;
+      color: red;
+      border-color: red;
    }
 }
 
@@ -499,19 +503,19 @@ body {
       justify-content: center;
       align-items: center;
       position: absolute;
-      top: -30px;
-      right: -33px;
-      color: darkred;
-      font-size: 30px;
+      top: -35px;
+      right: -38px;
+      color: #fff;
+      font-size: 24px;
       width: 35px;
       height: 35px;
-      background-color: #fff;
-      opacity: 0.7;
+      border: 1px solid #fff;
       border-radius: 50%;
       cursor: pointer;
-      transition: 0.1s;
+      transition: 0.2s;
       &:hover {
-         opacity: 1;
+         border-color: red;
+         color: red;
       }
    }
 }
@@ -868,6 +872,7 @@ body {
       position: absolute;
       top: 1%;
       left: 50%;
+      transform: translateX(-50%);
       z-index: 101;
       transition: all 0.3s;
       &:hover {
@@ -906,8 +911,7 @@ body {
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   row-gap: 30px;
-   max-width: 1205px;
+   max-width: 1285px;
    margin: auto;
 }
 .news__item {
@@ -923,10 +927,13 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%) translateY(-50%);
       visibility: hidden;
       opacity: 0;
       transition: all 0.3s;
+      &:hover {
+         width: 35px;
+      }
    }
    img {
       object-fit: cover;

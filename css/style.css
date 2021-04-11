@@ -633,9 +633,12 @@ body {
 
 .header__popup-close {
   position: absolute;
-  right: -20px;
-  top: -10px;
-  color: red;
+  right: -35px;
+  top: -5px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 3px 5px;
   font-size: 22px;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -643,7 +646,8 @@ body {
 }
 
 .header__popup-close:hover {
-  font-weight: 800;
+  color: red;
+  border-color: red;
 }
 
 .about__slider.swiper-container {
@@ -994,22 +998,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: -30px;
-  right: -33px;
-  color: darkred;
-  font-size: 30px;
+  top: -35px;
+  right: -38px;
+  color: #fff;
+  font-size: 24px;
   width: 35px;
   height: 35px;
-  background-color: #fff;
-  opacity: 0.7;
+  border: 1px solid #fff;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .feedback__modal_content .feedback__exit:hover {
-  opacity: 1;
+  border-color: red;
+  color: red;
 }
 
 .feedback__img {
@@ -1485,6 +1489,8 @@ body {
   position: absolute;
   top: 1%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 101;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1533,8 +1539,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 30px;
-  max-width: 1205px;
+  max-width: 1285px;
   margin: auto;
 }
 
@@ -1558,12 +1563,16 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.news__item .info-button:hover {
+  width: 35px;
 }
 
 .news__item img {
@@ -1731,6 +1740,12 @@ body {
   .team__text_article {
     margin: 0 0 19px 0;
     max-width: 523px;
+  }
+  .news__row {
+    max-width: 930px;
+    row-gap: 30px;
+    -webkit-column-gap: 31px;
+            column-gap: 31px;
   }
 }
 
@@ -2032,8 +2047,6 @@ body {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
-    color: red;
-    font-size: 26px;
     width: 30px;
     height: 30px;
   }
