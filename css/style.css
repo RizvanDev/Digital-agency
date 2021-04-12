@@ -1209,7 +1209,7 @@ body {
 
 .services__links_link a:hover {
   letter-spacing: 0.8px;
-  color: #634b86;
+  color: skyblue;
 }
 
 .services__links_link a:active {
@@ -1626,6 +1626,65 @@ body {
   transition: all 0.2s;
 }
 
+.quotes__slider .swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.quotes__slider .swiper-wrapper {
+  padding-top: 100px;
+}
+
+.quotes__slider .swiper-slide .quotes__icon {
+  width: 32px;
+  height: 14px;
+  margin: 0 auto 30px auto;
+  font-family: Roboto Condensed;
+}
+
+.quotes__slider .swiper-slide .quotes__text {
+  font-size: 36px;
+  line-height: 42px;
+  color: #4a4a4a;
+  max-width: 975px;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.quotes__slider .swiper-slide .quotes__text span {
+  color: #2b4074;
+  font-weight: bold;
+}
+
+.quotes__slider .swiper-slide figcaption {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+  margin: 30px 0 170px 0;
+}
+
+.quotes__slider .swiper-pagination {
+  margin-bottom: 80px;
+}
+
+.quotes__slider .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #2b4074;
+  opacity: 1;
+  border: 1px solid transparent;
+}
+
+.quotes__slider .swiper-pagination .swiper-pagination-bullet-active {
+  border: 1px solid #476e4d;
+  background: transparent;
+}
+
 @media (max-width: 1580px) {
   .feedback__img {
     left: 14%;
@@ -1747,6 +1806,13 @@ body {
     -webkit-column-gap: 31px;
             column-gap: 31px;
   }
+  .quotes__slider .swiper-slide .quotes__text {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .quotes__slider .swiper-slide figcaption {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1839,6 +1905,12 @@ body {
     left: 50%;
     -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
+  }
+  .quotes__slider .swiper-slide .quotes__text {
+    line-height: 34px;
+  }
+  .quotes__slider .swiper-slide figcaption {
+    line-height: 23px;
   }
 }
 
@@ -2078,5 +2150,9 @@ body {
   .team__text_article {
     margin: 23px 0 84px 0;
     max-width: 280px;
+  }
+  .quotes__slider .swiper-slide .quotes__text {
+    font-size: 24px;
+    line-height: 26px;
   }
 }

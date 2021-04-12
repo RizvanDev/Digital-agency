@@ -119,6 +119,13 @@
     -webkit-column-gap: 31px;
             column-gap: 31px;
   }
+  .quotes__slider .swiper-slide .quotes__text {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .quotes__slider .swiper-slide figcaption {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -211,6 +218,12 @@
     left: 50%;
     -webkit-transform: translateX(-65%);
             transform: translateX(-65%);
+  }
+  .quotes__slider .swiper-slide .quotes__text {
+    line-height: 34px;
+  }
+  .quotes__slider .swiper-slide figcaption {
+    line-height: 23px;
   }
 }
 
@@ -450,5 +463,9 @@
   .team__text_article {
     margin: 23px 0 84px 0;
     max-width: 280px;
+  }
+  .quotes__slider .swiper-slide .quotes__text {
+    font-size: 24px;
+    line-height: 26px;
   }
 }

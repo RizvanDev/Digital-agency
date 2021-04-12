@@ -73,3 +73,19 @@ video.onclick = function (event) {
       video.style.opacity = "0", video.style.visibility = "hidden", video.style.transition = "all .6s";
    }
 };
+
+new Swiper('.quotes__slider.swiper-container', {
+
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   simulateTouch: false,
+   initialSlide: 1,
+   loop: false,
+   autoplay: {
+      delay: 3000,
+      disableOnIntegration: true,
+   },
+   speed: 1000,
+});
