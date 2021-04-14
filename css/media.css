@@ -126,6 +126,20 @@
   .quotes__slider .swiper-slide figcaption {
     font-size: 20px;
   }
+  .footer__top_text {
+    font-size: 36px;
+  }
+  .footer__connection {
+    padding: 57px 0 95px;
+  }
+  .footer__connection a,
+  .footer__connection span {
+    font-size: 16px;
+  }
+  .footer__connection p {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -225,6 +239,14 @@
   .quotes__slider .swiper-slide figcaption {
     line-height: 23px;
   }
+  .footer__connection {
+    padding: 69px 0 33px;
+  }
+  .footer__connection p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -323,6 +345,13 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     font-size: 20px;
+  }
+  .footer__top_text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .footer__connection {
+    padding: 84px 0 40px;
   }
 }
 
@@ -467,5 +496,30 @@
   .quotes__slider .swiper-slide .quotes__text {
     font-size: 24px;
     line-height: 26px;
+  }
+  .footer__top_text {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__link {
+    width: 100%;
+    border: none;
+  }
+  .footer__connection {
+    padding: 85px 0 43px;
+  }
+  .footer__contacts,
+  .footer__address,
+  .footer__help,
+  .footer__menu {
+    width: 100%;
+    text-align: center;
   }
 }

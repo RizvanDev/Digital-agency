@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
-@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -7,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -1685,6 +1685,152 @@ body {
   background: transparent;
 }
 
+.footer {
+  background: #2b407e;
+  color: #fff;
+}
+
+.footer__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer__top {
+  position: relative;
+  padding: 161px 0 80px 0;
+}
+
+.footer__top_logo {
+  width: 230px;
+  height: 60px;
+  background: #2b407e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer__top_logo img {
+  width: 83px;
+  height: 55px;
+}
+
+.footer__top_text {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  max-width: 730px;
+}
+
+.footer__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__link {
+  width: 280px;
+  height: 63px;
+  border: 1px solid #7ebf84;
+  border-left: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__link:last-child {
+  border-right: none;
+}
+
+.footer__link img {
+  width: 26px;
+  height: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__link:hover {
+  background-color: #0f1731;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.footer__link:hover img {
+  width: 34px;
+  height: 26px;
+}
+
+.footer__connection {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__connection a,
+.footer__connection span {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+
+.footer__connection a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__connection a:hover {
+  opacity: 1;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 9px skyblue;
+}
+
+.footer__connection p {
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #f9f6e5;
+  margin-bottom: 22px;
+}
+
+.footer__contacts,
+.footer__address,
+.footer__help,
+.footer__menu {
+  width: 265px;
+}
+
 @media (max-width: 1580px) {
   .feedback__img {
     left: 14%;
@@ -1813,6 +1959,20 @@ body {
   .quotes__slider .swiper-slide figcaption {
     font-size: 20px;
   }
+  .footer__top_text {
+    font-size: 36px;
+  }
+  .footer__connection {
+    padding: 57px 0 95px;
+  }
+  .footer__connection a,
+  .footer__connection span {
+    font-size: 16px;
+  }
+  .footer__connection p {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1912,6 +2072,14 @@ body {
   .quotes__slider .swiper-slide figcaption {
     line-height: 23px;
   }
+  .footer__connection {
+    padding: 69px 0 33px;
+  }
+  .footer__connection p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2010,6 +2178,13 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     font-size: 20px;
+  }
+  .footer__top_text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .footer__connection {
+    padding: 84px 0 40px;
   }
 }
 
@@ -2154,5 +2329,30 @@ body {
   .quotes__slider .swiper-slide .quotes__text {
     font-size: 24px;
     line-height: 26px;
+  }
+  .footer__top_text {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__link {
+    width: 100%;
+    border: none;
+  }
+  .footer__connection {
+    padding: 85px 0 43px;
+  }
+  .footer__contacts,
+  .footer__address,
+  .footer__help,
+  .footer__menu {
+    width: 100%;
+    text-align: center;
   }
 }

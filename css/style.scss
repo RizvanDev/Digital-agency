@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
-@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 @import "_normalize.scss";
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
 
 body {
    font-family: "Roboto", sans-serif;
@@ -1026,6 +1026,112 @@ body {
       border: 1px solid #476e4d;
       background: transparent;
    }
+}
+
+//footer
+
+.footer {
+   background: #2b407e;
+   color: #fff;
+}
+.footer__container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.footer__top {
+   position: relative;
+   padding: 161px 0 80px 0;
+}
+.footer__top_logo {
+   width: 230px;
+   height: 60px;
+   background: #2b407e;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: -30px;
+   left: 50%;
+   transform: translateX(-50%);
+   img {
+      width: 83px;
+      height: 55px;
+   }
+}
+.footer__top_text {
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 2px;
+   max-width: 730px;
+}
+.footer__links {
+   width: 100%;
+   display: flex;
+}
+.footer__link {
+   width: 280px;
+   height: 63px;
+   border: 1px solid #7ebf84;
+   border-left: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &:last-child {
+      border-right: none;
+   }
+   img {
+      width: 26px;
+      height: 16px;
+      transition: all 0.3s ease;
+   }
+   &:hover {
+      background-color: #0f1731;
+      transition: all 0.7s ease;
+      img {
+         width: 34px;
+         height: 26px;
+      }
+   }
+}
+.footer__connection {
+   padding: 80px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   a,
+   span {
+      display: block;
+      font-size: 12px;
+      line-height: 20px;
+      opacity: 0.8;
+   }
+   a {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s;
+      &:hover {
+         opacity: 1;
+         letter-spacing: 0.3px;
+         text-shadow: 0 0 9px skyblue;
+      }
+   }
+   p {
+      font-family: Roboto Condensed;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2px;
+      color: #f9f6e5;
+      margin-bottom: 22px;
+   }
+}
+.footer__contacts,
+.footer__address,
+.footer__help,
+.footer__menu {
+   width: 265px;
 }
 
 @import "../css/media.scss";
