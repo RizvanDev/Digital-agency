@@ -533,4 +533,18 @@
       width: 100%;
       text-align: center;
    }
+   .footer__btn {
+      justify-content: center;
+      height: 130px;
+      span {
+         right: 0;
+         padding-right: 0;
+         &::after {
+            top: auto;
+            bottom: -50px;
+            right: 5%;
+            transform: translateY(-50%);
+         }
+      }
+   }
 }

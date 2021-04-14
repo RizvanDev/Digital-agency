@@ -522,4 +522,21 @@
     width: 100%;
     text-align: center;
   }
+  .footer__btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 130px;
+  }
+  .footer__btn span {
+    right: 0;
+    padding-right: 0;
+  }
+  .footer__btn span::after {
+    top: auto;
+    bottom: -50px;
+    right: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
