@@ -14,13 +14,13 @@ let modal = document.getElementById("header__popup");
 let btn = document.getElementById("my-modal");
 let close = document.getElementsByClassName("header__popup-close")[0];
 
-
 btn.onclick = function () {
    modal.style.margin = "0px", modal.style.transition = "all .5s";
 };
 close.onclick = function () {
    modal.style.margin = "-1500px 0 0 0", modal.style.transition = ".3s";
 };
+
 
 new Swiper('.about__slider.swiper-container', {
    navigation: {
@@ -47,15 +47,22 @@ let exit = document.getElementsByClassName("feedback__exit")[0];
 
 button.onclick = function () {
    popup.style.opacity = "1", popup.style.visibility = "visible", popup.style.transition = "all 0.8s";
+   if (popup.style.visibility == "visible") {
+      body.style.overflow = "hidden";
+   };
 };
 exit.onclick = function () {
    popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = ".6s";
+   if (popup.style.visibility == "hidden") {
+      body.style.overflow = "auto";
+   };
 };
 popup.onclick = function (event) {
    if (event.target == popup) {
-      popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = "all .6s";
-   }
+      popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = "all .6s", body.style.overflow = "auto";
+   };
 };
+
 
 let video = document.getElementById("video");
 let click = document.getElementById("video-btn");
@@ -64,13 +71,19 @@ let span = document.getElementsByClassName("video__exit")[0];
 
 click.onclick = function () {
    video.style.visibility = "visible", video.style.opacity = "1", video.style.transition = "all .5s ease-in";
+   if (video.style.visibility == "visible") {
+      body.style.overflow = "hidden";
+   };
 };
 span.onclick = function () {
    video.style.visibility = "hidden", video.style.opacity = "0", video.style.transition = ".3s";
+   if (video.style.visibility == "hidden") {
+      body.style.overflow = "auto";
+   };
 };
 video.onclick = function (event) {
    if (event.target == video) {
-      video.style.opacity = "0", video.style.visibility = "hidden", video.style.transition = "all .6s";
+      video.style.opacity = "0", video.style.visibility = "hidden", video.style.transition = "all .6s", body.style.overflow = "auto";
    }
 };
 
