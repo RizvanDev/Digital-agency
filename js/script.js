@@ -62,29 +62,30 @@ popup.onclick = function (event) {
       popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = "all .6s", body.style.overflow = "auto";
    };
 };
-
-
+let myVideo = document.getElementById("myVideo");
 let video = document.getElementById("video");
 let click = document.getElementById("video-btn");
 let span = document.getElementsByClassName("video__exit")[0];
-
 
 click.onclick = function () {
    video.style.visibility = "visible", video.style.opacity = "1", video.style.transition = "all .5s ease-in";
    if (video.style.visibility == "visible") {
       body.style.overflow = "hidden";
+      myVideo.play();
    };
 };
 span.onclick = function () {
    video.style.visibility = "hidden", video.style.opacity = "0", video.style.transition = ".3s";
    if (video.style.visibility == "hidden") {
       body.style.overflow = "auto";
+      myVideo.pause();
    };
 };
 video.onclick = function (event) {
    if (event.target == video) {
       video.style.opacity = "0", video.style.visibility = "hidden", video.style.transition = "all .6s", body.style.overflow = "auto";
-   }
+      myVideo.pause();
+   };
 };
 
 new Swiper('.quotes__slider.swiper-container', {
