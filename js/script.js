@@ -62,7 +62,7 @@ popup.onclick = function (event) {
       popup.style.opacity = "0", popup.style.visibility = "hidden", popup.style.transition = "all .6s", body.style.overflow = "auto";
    };
 };
-let myVideo = document.getElementById("myVideo");
+let myVideo = document.getElementById("my-video");
 let video = document.getElementById("video");
 let click = document.getElementById("video-btn");
 let span = document.getElementsByClassName("video__exit")[0];
