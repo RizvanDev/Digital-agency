@@ -20,7 +20,11 @@ btn.onclick = function () {
 close.onclick = function () {
    modal.style.margin = "-1500px 0 0 0", modal.style.transition = ".3s";
 };
-
+modal.onclick = function (event) {
+   if (event.target == modal) {
+      modal.style.margin = "-1500px 0 0 0", modal.style.transition = ".3s";
+   };
+};
 
 new Swiper('.about__slider.swiper-container', {
    navigation: {
