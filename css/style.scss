@@ -725,6 +725,17 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   overflow: hidden;
+   .link-picture {
+      transition: 0.3s;
+      z-index: 1;
+   }
+   &:hover {
+      .link-picture {
+         transform: scale(1.1);
+         transition: 0.8s;
+      }
+   }
    &:hover a {
       visibility: visible;
       opacity: 1;
@@ -736,6 +747,7 @@ body {
       opacity: 0;
       transition: all 0.5s;
       margin-bottom: 40px;
+      z-index: 3;
       & + a {
          margin-left: 80px;
       }
@@ -771,6 +783,7 @@ body {
    &:hover::before {
       visibility: visible;
       opacity: 0.8;
+      z-index: 2;
    }
 }
 
