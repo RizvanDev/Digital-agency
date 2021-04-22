@@ -36,7 +36,6 @@ new Swiper('.about__slider.swiper-container', {
       clickable: true,
    },
    simulateTouch: false,
-   initialSlide: 1,
    loop: false,
    autoplay: {
       delay: 3000,

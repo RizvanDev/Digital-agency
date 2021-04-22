@@ -662,22 +662,26 @@ body {
   margin-bottom: 100px;
 }
 
-.about__slider .swiper-slide {
-  background-image: url("../images/about-bg .jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+.about__slider.swiper-slide {
   color: #fff;
   text-align: center;
+  position: relative;
 }
 
-.about__slider .swiper-slide span {
+.about__slider.swiper-slide img {
   display: block;
+  position: absolute;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .about__slider .slide__title {
+  display: block;
   font-family: Roboto Condensed;
   font-weight: normal;
   font-size: 96px;
@@ -685,6 +689,7 @@ body {
   letter-spacing: 2px;
   width: 513px;
   margin: 107px auto 18px;
+  text-shadow: 0 0 4px #000;
 }
 
 .about__slider .slide__text {
@@ -694,6 +699,7 @@ body {
   line-height: 26px;
   width: 886px;
   margin: 0 auto;
+  text-shadow: 0 0 4px #000;
 }
 
 .about__slider .slide__link {
@@ -1563,27 +1569,9 @@ body {
   transition: all 0.3s;
 }
 
-.news__item .info-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.news__item .info-button:hover {
-  width: 35px;
-}
-
-.news__item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+.news__item .item-picture {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .news__item:hover {
@@ -1592,9 +1580,11 @@ body {
   transition: all 0.4s;
 }
 
-.news__item:hover .info-button {
-  visibility: visible;
-  opacity: 1;
+.news__item:hover .item-picture {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .news__item:hover .item__title {

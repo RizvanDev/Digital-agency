@@ -245,21 +245,22 @@ body {
    top: 100px;
    margin-bottom: 100px;
 }
-
-.about__slider .swiper-slide {
-   background-image: url("../images/about-bg\ .jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   width: 100%;
-   height: 100%;
+.about__slider.swiper-slide {
    color: #fff;
    text-align: center;
-   span {
+   position: relative;
+   img {
       display: block;
+      position: absolute;
+      object-position: center;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
    }
 }
 .about__slider .slide__title {
+   display: block;
    font-family: Roboto Condensed;
    font-weight: normal;
    font-size: 96px;
@@ -267,6 +268,7 @@ body {
    letter-spacing: 2px;
    width: 513px;
    margin: 107px auto 18px;
+   text-shadow: 0 0 4px #000;
 }
 .about__slider .slide__text {
    font-family: Roboto Condensed;
@@ -275,6 +277,7 @@ body {
    line-height: 26px;
    width: 886px;
    margin: 0 auto;
+   text-shadow: 0 0 4px #000;
 }
 .about__slider .slide__link {
    display: flex;
@@ -927,28 +930,15 @@ body {
    display: flex;
    align-items: center;
    transition: all 0.3s;
-   .info-button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s;
-      &:hover {
-         width: 35px;
-      }
-   }
-   img {
-      object-fit: cover;
-      object-position: center;
+   .item-picture {
+      transition: 0.5s;
    }
    &:hover {
       border-color: #2b407e;
       transition: all 0.4s;
-      .info-button {
-         visibility: visible;
-         opacity: 1;
+      .item-picture {
+         transform: scale(0.95);
+         transition: 0.8s;
       }
       .item__title {
          bottom: 0;
