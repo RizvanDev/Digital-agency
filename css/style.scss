@@ -280,11 +280,8 @@ body {
    text-shadow: 0 0 4px #000;
 }
 .about__slider .slide__link {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 200px;
-   height: 50px;
+   display: inline-flex;
+   padding: 17px 47px 14px 46px;
    margin: 28px auto 213px;
    background: #2b4074;
    border-radius: 3px;
@@ -294,6 +291,7 @@ body {
       content: "";
       position: absolute;
       top: 0;
+      left: 0;
       width: 100%;
       height: 0;
       background: cornsilk;
@@ -306,6 +304,7 @@ body {
       color: #000;
    }
    span {
+      display: block;
       font-weight: normal;
       font-size: 18px;
       line-height: 18px;
@@ -389,8 +388,8 @@ body {
    }
 }
 .feedback__btn {
-   width: 200px;
-   height: 50px;
+   min-width: 192px;
+   padding: 16px 4px;
    top: 71px;
    background: #f9f6e5;
    border: none;
@@ -831,13 +830,10 @@ body {
    width: 484px;
 }
 .team__button {
-   width: 230px;
-   height: 60px;
-   display: flex;
+   display: inline-flex;
+   padding: 21px 26px;
    font-size: 18px;
    line-height: 18px;
-   justify-content: center;
-   align-items: center;
    background: #2b4074;
    border-radius: 3px;
    color: #fff;
@@ -848,6 +844,7 @@ body {
       content: "";
       position: absolute;
       top: 0;
+      left: 0;
       width: 100%;
       height: 0;
       background: cornsilk;
